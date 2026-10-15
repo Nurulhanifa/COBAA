@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>FAQ | tongsampahbandung.com</title>
+    <meta
+      name="description"
+      content="Pertanyaan yang sering diajukan tentang peta tempat sampah Bandung."
+    />
+    <link rel="icon" href="img/logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Nunito+Sans:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header dan menu navigasi -->
+    <header class="top">
+      <div class="wrap">
+        <a class="brand" href="index.html">
+          <img src="img/logo.svg" alt="" />
+          <span>tongsampahbandung.com</span>
+        </a>
+        <button id="menu" aria-expanded="false" aria-controls="nv">Menu</button>
+        <nav id="nv" aria-label="Menu utama">
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="peta.html">Peta</a></li>
+            <li><a href="daftar-lokasi.html">Daftar lokasi</a></li>
+            <li><a href="tambah-lokasi.html">Tambah lokasi</a></li>
+            <li class="dd">
+              <button aria-haspopup="true">Edukasi &#9662;</button>
+              <ul>
+                <li><a href="jenis-tempat-sampah.html">Jenis tempat sampah</a></li>
+                <li><a href="panduan-memilah.html">Panduan memilah</a></li>
+                <li><a href="statistik.html">Statistik</a></li>
+              </ul>
+            </li>
+            <li class="dd">
+              <button aria-haspopup="true">Informasi &#9662;</button>
+              <ul>
+                <li><a href="tentang.html">Tentang</a></li>
+                <li><a href="faq.html" class="on" aria-current="page">FAQ</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+                <li><a href="kebijakan-privasi.html">Kebijakan privasi</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- isi halaman -->
+    <main>
+      <div class="page-head">
+        <div class="wrap">
+          <h1>Pertanyaan umum</h1>
+          <p>Jawaban singkat untuk hal yang sering ditanyakan.</p>
+        </div>
+      </div>
+      <div class="wrap">
+        <details>
+          <summary>Apakah data di peta sudah resmi?</summary>
+          <p>Belum. Data awal adalah contoh untuk demo dan belum diverifikasi lapangan.</p>
+        </details>
+        <details>
+          <summary>Bagaimana cara menambahkan lokasi?</summary>
+          <p>Buka halaman Tambah lokasi, klik titik di peta, isi formulir, lalu simpan.</p>
+        </details>
+        <details>
+          <summary>Mengapa lokasi yang saya tambahkan tidak terlihat di perangkat lain?</summary>
+          <p>
+            Pada versi demo, data disimpan di browser Anda (penyimpanan lokal), bukan di server.
+          </p>
+        </details>
+        <details>
+          <summary>Apa beda TPS dan TPA?</summary>
+          <p>
+            TPS adalah tempat pengumpulan sementara di lingkungan. TPA adalah tujuan akhir
+            pengangkutan sampah kota.
+          </p>
+        </details>
+        <details>
+          <summary>Apakah saya boleh membuang sampah pribadi di TPS mana saja?</summary>
+          <p>
+            Ikuti aturan RT/RW atau pengelola setempat. Sebagian TPS punya jadwal dan layanan
+            tertentu.
+          </p>
+        </details>
+        <details>
+          <summary>Mengapa peta tidak muncul?</summary>
+          <p>Peta memerlukan koneksi internet untuk memuat ubin peta OpenStreetMap.</p>
+        </details>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="wrap">
+        <p>
+          <strong>tongsampahbandung.com</strong>
+          &mdash; peta tempat sampah untuk warga Bandung. Proyek tugas UTS Perancangan dan
+          Pengembangan Web, Prodi Perpustakaan dan Sains Informasi, Universitas Padjadjaran.
+        </p>
+        <p>
+          <a href="peta.html">Peta</a>
+          &middot;
+          <a href="tambah-lokasi.html">Tambah lokasi</a>
+          &middot;
+          <a href="faq.html">FAQ</a>
+          &middot;
+          <a href="kebijakan-privasi.html">Kebijakan privasi</a>
+        </p>
+      </div>
+    </footer>
+    <!-- script -->
+    <script src="js/data.js"></script>
+  </body>
+</html>

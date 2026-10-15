@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Daftar lokasi | tongsampahbandung.com</title>
+    <meta
+      name="description"
+      content="Daftar seluruh titik tempat sampah yang bisa difilter per jenis dan kecamatan."
+    />
+    <link rel="icon" href="img/logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Nunito+Sans:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header dan menu navigasi -->
+    <header class="top">
+      <div class="wrap">
+        <a class="brand" href="index.html">
+          <img src="img/logo.svg" alt="" />
+          <span>tongsampahbandung.com</span>
+        </a>
+        <button id="menu" aria-expanded="false" aria-controls="nv">Menu</button>
+        <nav id="nv" aria-label="Menu utama">
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="peta.html">Peta</a></li>
+            <li><a href="daftar-lokasi.html" class="on" aria-current="page">Daftar lokasi</a></li>
+            <li><a href="tambah-lokasi.html">Tambah lokasi</a></li>
+            <li class="dd">
+              <button aria-haspopup="true">Edukasi &#9662;</button>
+              <ul>
+                <li><a href="jenis-tempat-sampah.html">Jenis tempat sampah</a></li>
+                <li><a href="panduan-memilah.html">Panduan memilah</a></li>
+                <li><a href="statistik.html">Statistik</a></li>
+              </ul>
+            </li>
+            <li class="dd">
+              <button aria-haspopup="true">Informasi &#9662;</button>
+              <ul>
+                <li><a href="tentang.html">Tentang</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+                <li><a href="kebijakan-privasi.html">Kebijakan privasi</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- isi halaman -->
+    <main>
+      <div class="page-head">
+        <div class="wrap">
+          <h1>Daftar lokasi</h1>
+          <p>Saring berdasarkan jenis atau kecamatan.</p>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="bar">
+          <label>
+            Jenis
+            <select id="fj">
+              <option value="">Semua jenis</option>
+            </select>
+          </label>
+          <label>
+            Kecamatan
+            <select id="fk">
+              <option value="">Semua kecamatan</option>
+            </select>
+          </label>
+        </div>
+        <!-- tabel diisi lewat daftar.js -->
+        <div class="scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Jenis</th>
+                <th>Kecamatan</th>
+                <th>Patokan</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="wrap">
+        <p>
+          <strong>tongsampahbandung.com</strong>
+          &mdash; peta tempat sampah untuk warga Bandung. Proyek tugas UTS Perancangan dan
+          Pengembangan Web, Prodi Perpustakaan dan Sains Informasi, Universitas Padjadjaran.
+        </p>
+        <p>
+          <a href="peta.html">Peta</a>
+          &middot;
+          <a href="tambah-lokasi.html">Tambah lokasi</a>
+          &middot;
+          <a href="faq.html">FAQ</a>
+          &middot;
+          <a href="kebijakan-privasi.html">Kebijakan privasi</a>
+        </p>
+      </div>
+    </footer>
+    <!-- script -->
+    <script src="js/data.js"></script>
+    <script src="js/daftar.js"></script>
+  </body>
+</html>
